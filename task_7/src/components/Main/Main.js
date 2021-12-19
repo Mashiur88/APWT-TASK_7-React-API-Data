@@ -4,6 +4,7 @@ import Head from "./Head/Head";
 import Home from "./Home/Home";
 import List from "./List/List";
 import Details from "./Details/Details";
+import Contact from "./Contact/Contact";
 const Main = () =>{
     return(
         <div>
@@ -12,7 +13,7 @@ const Main = () =>{
                 <Switch>
                     <Route exact path="/"><Home/></Route>
                     <Route exact path="/list"><List/></Route>
-                    <Route exact path="/contact"><List/></Route>
+                    <Route exact path="/contact"><Contact/></Route>
                     <Route exact path="/details/:id"><Details/></Route>
                 </Switch>
             </Router>
